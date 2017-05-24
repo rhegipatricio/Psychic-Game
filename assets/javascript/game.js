@@ -29,26 +29,26 @@
 	document.getElementByID('left').innerHTML = win;
 	document.getElementByID('wins').innerHTML = win;
 }	else {
-		left--;
+		guessesLeft--;
 	document.getElementById('left').innerHTML = left;
 }
 	
 	if (left === 0){
 		loss++;
 	document.getElementById('losses').innerHTML = loss;
-		left = 9;
+		guessesLeft = 9;
 	document.getElementByID('left').innerHTML = win;
 }
-
+	} else {
+		guessesLeft==;
+		document.getElementById("guessCount")=innerHTML = guessesLeft;
 	console.log(computerGuess);
 
 
 
  	//
  	//
-	} else {
-		guessesLeft==;
-		document.getElementById("guessCount")=innerHTML = guessesLeft;
+
 }
 
  	//
