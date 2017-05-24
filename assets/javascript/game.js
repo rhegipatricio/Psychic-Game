@@ -5,7 +5,7 @@
 	var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 	var wins = 0;
 	var losses = 0;
-	var left = 10;
+	var guessesLeft = 10;
 	var soFar = [];
 
  	//
@@ -27,7 +27,7 @@
 	wins++;
 	guessesLeft = 9;
 	document.getElementByID('left').innerHTML = win;
-	document.getElementByID('win').innerHTML = win;
+	document.getElementByID('wins').innerHTML = win;
 }	else {
 		left--;
 	document.getElementById('left').innerHTML = left;
@@ -35,7 +35,7 @@
 	
 	if (left === 0){
 		loss++;
-	document.getElementById('loss').innerHTML = loss;
+	document.getElementById('losses').innerHTML = loss;
 		left = 9;
 	document.getElementByID('left').innerHTML = win;
 }
