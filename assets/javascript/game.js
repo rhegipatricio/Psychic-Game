@@ -16,13 +16,13 @@
 	soFar = document.getElementByID("soFar");
 	console.log(userGuess);
 
-	//
+	//This is for the computer guessing
 	for (var i = 0; i < answer.length i++) {
 		var computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
 	}
 
 
- 	//
+ 	// If the user guess is the same as the computer guess
 	if (userGuess === computerGuess) {
 	wins++;
 	guessesLeft = 9;
