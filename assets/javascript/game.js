@@ -10,7 +10,7 @@
 			var newLetter = alphabet[Math.floor(Math.random() * alphabet.length)];
 
 
-			//var computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
+			
 
 			//when the user presses the key, it'll run the function event
 			document.onkeyup=function (event) {
@@ -19,7 +19,7 @@
 			//If a user's guess equals the computer's guess, the win counter will go up one
 			if (userGuess === computerGuess) {
 			wins++;
-			console.log ("WIN!");
+			console.log ("Professor X is proud!");
 			computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
 			}
 			//If a user's guess does not equal the computer's guess, the loss counter will go up one
@@ -27,7 +27,7 @@
 			losses++;
 			computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
 			console.log ("computerGuess ", computerGuess)			
-			console.log ("LOSER!")	
+			console.log ("Jean Grey is still smarter than you!")	
 			}
 
 			//If guesses do not equal to 0, the number of guesses go down by one
@@ -37,7 +37,16 @@
 			//The console will log the number of guesses left
 			console.log ("guessesLeft", guessesLeft)
 			}
+
+			//If guesses have been repeated, an alert shows up
+			if (userGuess === computerguess) {
+				alert ("Please choose a different letter")
+			}
 		}
+
+		/*Pseudocode
+		1) Player begins game by pressing a key
+
 
 	/*Code Tried
 	Computer generates a random letter
@@ -46,6 +55,7 @@
 		guessesLeft=10
 	}
 
+	/*var computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
 	calling function
 	newLetter ();*/
 
