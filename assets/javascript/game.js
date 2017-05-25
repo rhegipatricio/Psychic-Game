@@ -7,12 +7,13 @@
 			var losses = 0;
 			var guessesLeft = 10;
 			var soFar = [];
-			var newLetter = alphabet[Math.floor(Math.random() * alphabet.length)];
+			var computerGuess = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
+			//Computer pulls a random number
+			var computerGuess = options[Math.floor(Math.random() * alphabet.length)];
+    		console.log('computerGuess' + computerGuess);
 
-			
-
-			//when the user presses the key, it'll run the function event
+			//When the user presses the key, it'll run the function event
 			document.onkeyup=function (event) {
 			var userGuess = event.key;
 			console.log ("user guess ", userGuess, "computer guess ", computerGuess);
@@ -45,10 +46,14 @@
 		}
 
 		/*Pseudocode
-		1) Player begins game by pressing a key
+		 Game starts by computer picking a random letter from the alphabet
+		 User tries to guess one of the 26 letters
+		 If user's guess equals to the computer's original guess, the user gets a point
+		 If user's guess doesn't equal to the computer's guess, the losses count will go up
+		 game ends when 
 
 
-	/*Code Tried
+	/*Below is Code Tried, but failed
 	Computer generates a random letter
 	function newLetter() {
 		var computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
