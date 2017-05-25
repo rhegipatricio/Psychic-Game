@@ -48,7 +48,9 @@
 			//Referencing <span> in html
 			var wins = document.getElementsByID('wins'), 
 				losses = document.getElementsByID('losses'),
-		
+				guessesLeft = document.getElementsByID('guessesLeft'),
+				guessesUsed = document.getElementsByID ('soFar');
+
 
 
 
