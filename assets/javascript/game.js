@@ -1,4 +1,4 @@
-
+	
 
 
 			//These are the variables
@@ -44,6 +44,14 @@
 				alert ("Please choose a different letter")
 			}
 		}
+
+			//Referencing <span> in html
+			var wins = document.getElementsByID('wins'), 
+				losses = document.getElementsByID('losses'),
+		
+
+
+
 
 		/*Pseudocode
 		 Game starts by computer picking a random letter from the alphabet
