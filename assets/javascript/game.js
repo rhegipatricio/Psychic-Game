@@ -20,7 +20,7 @@
 			//If a user's guess equals the computer's guess, the win counter will go up one
 			if (userGuess === computerGuess) {
 			wins++;
-			console.log ("Professor X is proud!");
+			console.log ("Jean Grey gets closer to being Dark Phoenix - because she lost!");
 			computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
 			}
 			//If a user's guess does not equal the computer's guess, the loss counter will go up one
